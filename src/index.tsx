@@ -1,11 +1,18 @@
-import { NavigationContainer } from "@react-navigation/native";
-
+import 'react-native-gesture-handler';
+import React from 'react';
+// import { NavigationContainer } from "@react-navigation/native";
+import { StatusBar } from 'expo-status-bar';
 import AppNavigator from "./navigation/AppNavigator";
 
 export default function App() {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
+    //   <AppNavigator />
+    // </NavigationContainer>
+    <>
+      <StatusBar style='auto'/>
       <AppNavigator />
-    </NavigationContainer>
+    
+    </>
   );
 }
